@@ -38,7 +38,7 @@ If you're someone who likes real stuff that works — maybe you'll like it too.
 ### 📬 Follow my journey
 
 - YouTube: [FanxPal Channel](https://www.youtube.com/@fanxpal)
-- Facebook: [FanxPal fanpage](https://www.facebook.com/fanxpal)
+- Facebook: [FanxPal Fanpage](https://www.facebook.com/fanxpal)
 - Instagram: [@fanxpal](https://www.instagram.com/fanxpal)
 
 
