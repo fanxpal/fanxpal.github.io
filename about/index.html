@@ -1,1 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - FanxPal</title>
+    <link rel="icon" type="image/png" href="../iconf.png" />
+    <meta name="description" content="Meet Fan, the person behind FanxPal. Learn about the story, mission, and personal journey of creating meaningful content around lo-fi music, trading systems, and creative living.">
+    <meta name="keywords" content="about fanxpal, fan story, lo-fi creator, trading systems, personal blog, creative living">
+    <meta name="author" content="FanxPal">
 
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .logo-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        .logo:hover {
+            color: #555;
+        }
+
+        .logo::after {
+            content: 'ˣ';
+            position: absolute;
+            top: -15px;
+            right: -25px;
+            font-size: 2rem;
+            color: #666;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        .nav-link {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #333;
+        }
+
+        .nav-link i {
+            margin-right: 8px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px 0 60px;
+        }
+
+        .content-section {
+            margin: 60px 0;
+            padding: 0 20px;
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .content-section p {
+            font-size: 1.15rem;
+            color: #555;
+            margin: 20px 0;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .intro-section p {
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Lists */
+        .features-list {
+            list-style: none;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .features-list li {
+            margin: 25px 0;
+        }
+
+        .features-list li h4 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .features-list li p {
+            font-size: 1.05rem;
+            color: #666;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        /* Target audience section */
+        .target-section {
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .target-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .target-list li {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: center;
+        }
+
+        /* Final thoughts */
+        .final-thoughts {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .final-thoughts h2 {
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .final-thoughts p {
+            color: #555;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        /* Back to home button */
+        .back-home {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .back-home-btn {
+            display: inline-block;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-home-btn:hover {
+            background: #555;
+            transform: translateY(-2px);
+        }
+
+        .back-home-btn i {
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #888;
+            font-style: italic;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.8rem;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .content-section {
+                padding: 0 10px;
+            }
+            
+            .content-section p {
+                font-size: 1.1rem;
+                text-align: left;
+            }
+            
+            .intro-section,
+            .target-section,
+            .final-thoughts {
+                padding: 25px 20px;
+            }
+            
+            .features-list li {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo-link">
+                <div><img src="../fanxpallogoS.png" alt="FanxPal Logo" style="max-height: 80px; margin-bottom: 20px;"></div>
+            </a>
+            <h1 class="page-title">About FanxPal</h1>
+            <a href="/" class="nav-link">
+                <i class="fas fa-home"></i>Back to Home
+            </a>
+        </header>
+
+        <main>
+            <div class="intro-section">
+                <h2>Who's Behind FanxPal?</h2>
+                <p>
+                    Hey there — I'm <span class="highlight">Fan</span>, the person behind this quiet little project.
+                </p>
+                <p>
+                    FanxPal started as a personal space for sharing the things I genuinely enjoy and explore: 
+                    🎧 Lo-fi music, 💹 trading systems, 🌱 slow living, 🍳 simple cooking, and 🧠 mindful productivity.
+                </p>
+                <p>
+                    I'm not a company or a content factory. Just someone who likes building meaningful things and sharing what's real — especially the stuff that actually works in everyday life.
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2>What Does FanxPal Mean?</h2>
+                <p>
+                    It's a play on words: <span class="highlight">"Fan × Pal"</span>
+                </p>
+                <ul class="features-list" style="list-style: none;">
+                    <li>
+                        <h4><strong>Fan</strong> — which happens to be my nickname</h4>
+                    </li>
+                    <li>
+                        <h4><strong>Pal</strong> — because I wanted this project to feel like a friendly companion</h4>
+                    </li>
+                </ul>
+                <p>
+                    Put together, FanxPal is a reminder that everything here comes from me, and it's shared with you — like a conversation between friends.
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2>What This Project Is About</h2>
+                <p>FanxPal blends creative expression with practical tools for daily life:</p>
+                
+                <ul class="features-list">
+                    <li>
+                        <h4>🔍 Trading systems that are data-driven and DIY</h4>
+                        <p>I build and test strategies from scratch, and share what I learn</p>
+                        <p>No hype, no shortcuts — just things that hold up over time</p>
+                    </li>
+                    <li>
+                        <h4>🎵 Music that helps you think clearly and breathe easier</h4>
+                        <p>Mostly lo-fi and chill beats for focus, reflection, or winding down</p>
+                    </li>
+                    <li>
+                        <h4>🌿 Slow, intentional living</h4>
+                        <p>Gardening, simple meals, quiet routines, and appreciating small wins</p>
+                    </li>
+                    <li>
+                        <h4>🛠️ Tools and ideas that actually help</h4>
+                        <p>Productivity systems that reduce noise, not add to it</p>
+                        <p>Digital workflows for creative minds</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="target-section">
+                <h2>Who's This For?</h2>
+                <p>If you:</p>
+                <ul class="target-list">
+                    <li>Listen to lo-fi while you code, journal, or build things</li>
+                    <li>Want to understand trading with more clarity and less chaos</li>
+                    <li>Prefer quiet mornings and small systems that bring peace</li>
+                    <li>Love meaningful tools over trendy ones</li>
+                </ul>
+                <p style="font-weight: 600; margin-top: 25px;">
+                    Then this space is for you.
+                </p>
+            </div>
+
+            <div class="final-thoughts">
+                <h2>Final Thoughts</h2>
+                <p>
+                    Thanks for visiting this little corner of the internet. I may not know everything, but I'm always learning — and I love sharing the process.
+                </p>
+                <p>
+                    If you're someone who values calm, curiosity, and creativity... Well, maybe we're already pals. 🌿
+                </p>
+            </div>
+
+            <div class="back-home">
+                <a href="/" class="back-home-btn">
+                    <i class="fas fa-home"></i>Back to Home
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Thanks for taking the time to learn about FanxPal. Hope you find something you love.</p>
+        </footer>
+    </div>
+</body>
+</html>
